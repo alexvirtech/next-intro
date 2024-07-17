@@ -1,4 +1,4 @@
-import { simpleGit } from "simple-git"
+const { simpleGit } = require("simple-git")
 
 const name = (pref='a_') => {
     const date = new Date()

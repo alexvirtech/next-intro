@@ -1,8 +1,17 @@
+import { useEffect, useState } from "react"
 import { MainLayout } from "../components/layout"
 import { useRouter } from "next/router"
 
 export default function Coins({data}) {
+//export default function Coins() {
     const router = useRouter()
+ /* const [data,setData] = useState(null)
+
+    useEffect(() => {
+        fetch('https://api.mtw-testnet.com/assets/symbols')
+        .then(res => res.json())
+        .then(d => setData(d))
+    }, []) */
 
     return (
         <MainLayout title="Coins">
