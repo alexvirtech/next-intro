@@ -14,7 +14,20 @@ export default function Coin({data}) {
                     <Link href="/coins" className="text-blue-800 font-bold hover:underline">Back to All Coins</Link>
                 </div>
             </div>
-            <pre>{JSON.stringify(data,null,4)}</pre>
+            {/* <pre>{JSON.stringify(data,null,4)}</pre> */}
+            {
+               
+                    <div>
+                        {Object.entries(data).map(([k,v]) => (
+                            <div className="flex justify-start gap-2">
+                                <div className="w-[80px]">{k}</div>
+                                <div className="w-1/2">{v}</div>
+                            </div>   
+                        ))}
+                        
+                    </div>
+                
+            }
         </MainLayout>
     )
 } 
